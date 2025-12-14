@@ -1,7 +1,6 @@
 # Typee - On-Chain Proof of Typing
 
 ![Typee Banner](public/typee.png)
-*(Ganti link gambar di atas dengan screenshot aplikasi kamu)*
 
 **Typee** is a minimalist typing speed test application built on the **IOTA Blockchain**. Unlike traditional typing tests where scores are ephemeral, Typee allows users to mint their WPM (Words Per Minute) and Accuracy results as verifiable **NFTs (Non-Fungible Tokens)**.
 
