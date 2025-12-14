@@ -1,6 +1,7 @@
 # Typee - On-Chain Proof of Typing
 
 ![Typee Banner](public/typee.png)
+![Typee Banner](public/typee2.png)
 
 **Typee** is a minimalist typing speed test application built on the **IOTA Blockchain**. Unlike traditional typing tests where scores are ephemeral, Typee allows users to mint their WPM (Words Per Minute) and Accuracy results as verifiable **NFTs (Non-Fungible Tokens)**.
 
@@ -50,11 +51,19 @@ Online typing competitions often suffer from cheating (local HTML edits). By exe
 
 ---
 
-## 🚀 Getting Started
+## ⛓️ Smart Contract Details
 
-Follow these steps to run Typee locally:
+The logic behind Typee is powered by a Move Smart Contract deployed on the IOTA Testnet.
 
-### 1. Clone the repository
-```bash
-git clone [https://github.com/yourusername/typee.git](https://github.com/yourusername/typee.git)
-cd typee
+* **Package Address:** `0xc00e31b0d06c4774e4149b48153a327601c20d985fd5ab2529cc3fdb76bcef20`
+* **Module Name:** `game`
+* **Function:** `mint_score`
+* **Explorer Link:** [View on IOTA Explorer](https://explorer.iota.org/testnet/object/0xc00e31b0d06c4774e4149b48153a327601c20d985fd5ab2529cc3fdb76bcef20)
+
+**Structure of the `Score` Object:**
+```move
+struct Score has key, store {
+    id: UID,
+    wpm: u64,
+    accuracy: u64,
+}
