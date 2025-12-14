@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  /* base colors */
+  --background: #323437;
+  --foreground: #d1d0c5;
+
+  /* custom palette */
+  --main-color: #e2b714;
+  --caret-color: #e2b714;
+  --sub-color: #646669;
+  --error-color: #ca4754;
+}
+
+/* expose ke Tailwind theme */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-main: var(--main-color);
+  --color-caret: var(--caret-color);
+  --color-sub: var(--sub-color);
+  --color-error: var(--error-color);
+
+  --font-sans: 'Courier New', Courier, monospace;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+/* optional: dark mode system (boleh dihapus kalau ga perlu) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #323437;
+    --foreground: #d1d0c5;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  font-weight: 700;
+}
