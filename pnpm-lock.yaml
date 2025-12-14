@@ -12,8 +12,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(@tanstack/react-query@5.90.12(react@19.2.1))(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3)
       '@iota/iota-sdk':
-        specifier: ^1.9.1
-        version: 1.9.1(typescript@5.9.3)
+        specifier: ^1.9.0
+        version: 1.9.0(typescript@5.9.3)
       '@tanstack/react-query':
         specifier: ^5.90.12
         version: 5.90.12(react@19.2.1)
@@ -409,10 +409,6 @@ packages:
 
   '@iota/iota-sdk@1.9.0':
     resolution: {integrity: sha512-RaLv5fBmnM7G7Jnp9ntqr4yvle6QXyQn6DgJakHqBpwqs+vtinZdDiNtoyA+mhDpbhzEZ9ZSwREIOasqHtWZQA==}
-    engines: {node: '>=20'}
-
-  '@iota/iota-sdk@1.9.1':
-    resolution: {integrity: sha512-tsJJ6fJHPHTYxXX0BlRYjerKhaSH0XhBNkVGQRCCOSnunJGsB5ivG3ijQHygyA0yV+QOQ237bkhijmHAKZWGkw==}
     engines: {node: '>=20'}
 
   '@iota/wallet-standard@0.3.0':
@@ -2449,14 +2445,6 @@ packages:
   valibot@0.36.0:
     resolution: {integrity: sha512-CjF1XN4sUce8sBK9TixrDqFM7RwNkuXdJu174/AwmQUB62QbCQADg5lLe8ldBalFgtj1uKj+pKwDJiNo4Mn+eQ==}
 
-  valibot@1.2.0:
-    resolution: {integrity: sha512-mm1rxUsmOxzrwnX5arGS+U4T25RdvpPjPN4yR0u9pUBov9+zGVtO84tif1eY4r6zWxVxu3KzIyknJy3rxfRZZg==}
-    peerDependencies:
-      typescript: '>=5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   which-boxed-primitive@1.1.1:
     resolution: {integrity: sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==}
     engines: {node: '>= 0.4'}
@@ -2884,26 +2872,6 @@ snapshots:
       graphql: 16.12.0
       tweetnacl: 1.0.3
       valibot: 0.36.0
-    transitivePeerDependencies:
-      - '@gql.tada/svelte-support'
-      - '@gql.tada/vue-support'
-      - typescript
-
-  '@iota/iota-sdk@1.9.1(typescript@5.9.3)':
-    dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.12.0)
-      '@iota/bcs': 1.4.0
-      '@noble/curves': 1.9.7
-      '@noble/hashes': 1.8.0
-      '@scure/bip32': 1.7.0
-      '@scure/bip39': 1.6.0
-      '@suchipi/femver': 1.0.0
-      bech32: 2.0.0
-      bignumber.js: 9.3.1
-      gql.tada: 1.9.0(graphql@16.12.0)(typescript@5.9.3)
-      graphql: 16.12.0
-      tweetnacl: 1.0.3
-      valibot: 1.2.0(typescript@5.9.3)
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
       - '@gql.tada/vue-support'
@@ -5137,10 +5105,6 @@ snapshots:
       react: 19.2.1
 
   valibot@0.36.0: {}
-
-  valibot@1.2.0(typescript@5.9.3):
-    optionalDependencies:
-      typescript: 5.9.3
 
   which-boxed-primitive@1.1.1:
     dependencies:
