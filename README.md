@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Typee - On-Chain Proof of Typing
 
-## Getting Started
+![Typee Banner](public/typee.png)
+*(Ganti link gambar di atas dengan screenshot aplikasi kamu)*
 
-First, run the development server:
+**Typee** is a minimalist typing speed test application built on the **IOTA Blockchain**. Unlike traditional typing tests where scores are ephemeral, Typee allows users to mint their WPM (Words Per Minute) and Accuracy results as verifiable **NFTs (Non-Fungible Tokens)**.
 
+This project demonstrates a practical implementation of **"Proof of Skill"** using Move Smart Contracts and the IOTA dApp Kit.
+
+---
+
+## 🌟 Key Features
+
+* **Minimalist Engine:** A distraction-free typing experience with real-time WPM & Accuracy calculation.
+* **Wallet Integration:** Seamless connection with IOTA Wallets via `@iota/dapp-kit`.
+* **Mint to Blockchain:** Convert your typing result into an immutable NFT on the IOTA Testnet.
+* **On-Chain History:** Fetch and display your entire history of minted scores directly from the blockchain.
+* **Verifiable:** Every score has a unique Object ID that can be verified on the IOTA Explorer.
+
+---
+
+## 💡 Use Cases
+
+Why mint a typing score? Typee explores the concept of **On-Chain Credentialing**:
+
+### 1. Verifiable CV & Portfolio (Proof of Skill)
+Traditional CVs list skills like "Fast Typer" without proof. With Typee, freelancers, virtual assistants, or data entry clerks can provide a wallet address or Object ID. Employers can verify the authenticity of the skill on-chain, ensuring the data hasn't been tampered with.
+
+### 2. Token-Gated Communities
+Communities or DAOs can use Typee NFTs as an entry ticket. For example, a "Speed Typist DAO" could require holding a Typee NFT with >100 WPM to join their exclusive Discord server.
+
+### 3. Esports & Tournaments
+Online typing competitions often suffer from cheating (local HTML edits). By executing the logic and minting the result directly through a smart contract, tournament organizers can ensure the integrity of the leaderboard for prize distribution.
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**
+* [Next.js 14](https://nextjs.org/) (App Router)
+* [React](https://react.dev/) (Hooks & State Management)
+* [Tailwind CSS](https://tailwindcss.com/) (Styling)
+
+**Blockchain Integration:**
+* [IOTA dApp Kit](https://docs.iota.org/dapp-kit) (Wallet connection & Transaction signing)
+* [IOTA TypeScript SDK](https://docs.iota.org/iota-sdk) (Fetching objects & RPC calls)
+
+**Smart Contract:**
+* **Language:** Move
+* **Network:** IOTA Testnet
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run Typee locally:
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone [https://github.com/yourusername/typee.git](https://github.com/yourusername/typee.git)
+cd typee
